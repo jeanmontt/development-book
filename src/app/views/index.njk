@@ -1,0 +1,51 @@
+{% extends "layout.njk" %}
+
+{% block head %}
+  <link rel="stylesheet" href="/styles/index.css">
+  <title>Livro de estudos</title>
+{% endblock head %}
+
+{% block content %}
+  <div class="techs">
+    <h1>Tecnologias 🚀</h1>
+
+    <div class="cards">
+      <div class="card">
+        <a href="/html">
+          <img src="/assets/html5.png" alt="html">
+          <p>HTML</p>
+        </a>
+      </div>
+      <div class="card">
+        <a href="/css">
+          <img src="/assets/css.png" alt="css">
+          <p>CSS</p>
+        </a>
+      </div>
+      <div class="card">
+        <a href="/javascript">
+          <img src="/assets/javascript.png" alt="javascript">
+          <p>JavaScript</p>
+        </a>
+      </div>
+      <div class="card">
+        <a href="/react">
+          <img src="/assets/react.png" alt="react">
+          <p>React</p>
+        </a>
+      </div>
+      <div class="card">
+        <a href="/typescript">
+          <img src="/assets/typescript.png" alt="typescript">
+          <p>TypeScript</p>
+        </a>
+      </div>
+      <div class="card">
+        <a href="/nodejs">
+          <img src="/assets/node.png" alt="nodejs">
+          <p>NodeJS</p>
+        </a>
+      </div>
+    </div>
+  </div>
+{% endblock content %}
