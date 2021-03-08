@@ -1,7 +1,14 @@
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
 .techs h1 {
   color: whitesmoke;
+  /* text-align: center; */
 
-  margin-bottom: 4rem;
+  margin-bottom: 3rem;
 }
 
 .techs .cards {
@@ -20,14 +27,21 @@
 }
 
 .techs .card a {
-  height: 8.4375rem;
+  height: 10rem;
+  width: 10rem;
 
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 
+  padding: 1.25rem;
+
+  border: 1px solid dimgray;
+  border-radius: 8px;
+
   color: whitesmoke;
+  letter-spacing: 0.1rem;
 
   transition: 300ms;
 }
@@ -35,15 +49,19 @@
 .techs .card a:hover {
   color: var(--primary-color);
 
-  -webkit-transform: scale(1.1);
-  -ms-transform: scale(1.1);
-  transform: scale(1.1);
+  border: 1px solid var(--primary-color);
 }
 
 .techs .card a img {
   margin-bottom: 1rem;
 
   transition: 300ms;
+}
+
+.techs .card a:hover img {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .techs .card a p {
@@ -65,4 +83,13 @@
 .techs .card a:hover p::after {
   width: 100%;
   transition: width 250ms ease-in-out 200ms;
+}
+
+.image {
+  display: flex;
+  justify-content: center;
+}
+
+.image img {
+  width: 100%;
 }

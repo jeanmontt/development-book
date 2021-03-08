@@ -1,0 +1,35 @@
+{% extends "layout.njk" %}
+
+{% block head %}
+  <link rel="stylesheet" href="/styles/subjects/index.css">
+
+  <title>&ltJeanmontt /&gt | HTML</title>
+  <title></title>
+{% endblock head %}
+
+{% block content %}
+  <div class="title">
+    <h1>HTML - HyperText Markup Language</h1>
+  </div>
+
+  <div class="index">
+    <h2>Índice</h2>
+
+    <ul>
+      <li>
+        <a href="/html#01">1 - Conceito</a>
+      </li>
+      <li>
+        <a href="/html#02">2 - Tag</a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="content">
+    {% include "techs/html/01_concept.njk" %}
+
+    <div class="partition"></div>
+
+    {% include "techs/html/02_tag.njk" %}
+  </div>
+{% endblock content %}

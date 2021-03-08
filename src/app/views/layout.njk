@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="/styles/main.css">
 
     {% block head %}
-      <title>Livro do desenvolvedor</title>
+      <title>&ltJeanmontt /&gt | Estudo Dev</title>
     {% endblock head %}
   </head>
 
@@ -19,7 +19,7 @@
       {% block content %}{% endblock content %}
     </main>
 
-    <footer></footer>
+    {% include "parts/footer.njk" %}
 
     {% block scripts %}{% endblock scripts %}
   </body>

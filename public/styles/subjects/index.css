@@ -1,0 +1,98 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+
+  margin-bottom: 2rem;
+}
+
+.index {
+  border-bottom: 1px solid silver;
+
+  padding-bottom: 20px;
+  margin-bottom: 50px;
+}
+
+.index h2 {
+  margin-bottom: 2rem;
+}
+
+.index ul {
+  margin-left: 1.125rem;
+}
+
+.index ul li {
+  margin-bottom: 0.5rem;
+}
+
+.index ul li:last-child {
+  margin-bottom: 0;
+}
+
+.index ul li a {
+  color: whitesmoke;
+  font-size: 1.125rem;
+
+  transition: color 300ms;
+}
+
+.index ul li a:hover {
+  color: var(--primary-color);
+}
+
+.item {
+  margin-bottom: 2.625rem;
+}
+
+.item:last-child {
+  margin-bottom: 0;
+}
+
+.item h2 {
+  margin-bottom: 1rem;
+}
+
+.item .subject {
+  margin-left: 1rem;
+}
+
+.item .subject p {
+  margin-bottom: 1rem;
+
+  text-align: justify;
+
+  color: var(--text-color);
+}
+
+.item .subject p:last-child {
+  margin-bottom: 0;
+}
+
+.item strong {
+  font-weight: normal;
+}
+
+.item strong.pink {
+  color: hotpink;
+}
+
+.item strong.green {
+  color: green;
+}
+
+.item strong.yellow {
+  color: yellow;
+}
+
+.partition {
+  width: 50%;
+
+  border-bottom: 1px solid dimgrey;
+
+  margin-bottom: 2.625rem
+}
